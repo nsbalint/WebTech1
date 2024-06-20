@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés - SzámTechShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.jpg" type="image/jpg" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rendelés</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="products.html">Termékeink</a></li>
+            <li><a href="gallery.html">Galéria</a></li>
+            <li><a href="contact.html">Kapcsolat</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form id="orderForm">
+            <label for="name">Név:</label>
+            <input type="text" id="name">
+            <span id="name-error" class="error-message"></span>
+            <br>
+
+            <span>Milyen terméket szeretne rendelni?</span><br>
+            <input type="radio" id="laptop" name="product" value="Laptop">
+            <label for="laptop">Laptop</label>
+            <input type="radio" id="desktop" name="product" value="Asztali Számítógép">
+            <label for="desktop">Asztali Számítógép</label>
+            <input type="radio" id="monitor" name="product" value="Monitor">
+            <label for="monitor">Monitor</label>
+            <span id="radio-error" class="error-message"></span>
+            <br>
+
+            <span>Kiegészítők:</span><br>
+            <input type="checkbox" id="keyboard" name="accessory" value="Billentyűzet">
+            <label for="keyboard">Billentyűzet</label>
+            <input type="checkbox" id="mouse" name="accessory" value="Egér">
+            <label for="mouse">Egér</label>
+            <input type="checkbox" id="printer" name="accessory" value="Nyomtató">
+            <label for="printer">Nyomtató</label>
+            <br>
+
+            <label for="color">Termék színe:</label>
+            <input type="color" id="color" name="color">
+            <br>
+
+            <label for="date">Rendelés dátuma:</label>
+            <input type="date" id="date" name="date">
+            <br>
+
+            <button type="submit">Rendelés</button>
+        </form>
+    </section>
+</body>
+</html>
